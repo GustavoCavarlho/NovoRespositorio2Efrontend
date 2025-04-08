@@ -1,11 +1,43 @@
 body {
-    background-color: brown;
+    background-color: rgb(230, 77, 63);
+    margin: 0;
+    padding-top: 60px;
+    box-sizing: border-box;
 }
 
+.contrainer {
+    max-width: 90px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #fbfbfb;
+    border-top: 5px solid #ffffff;
+    
+}
+
+main{
+    padding: 20px 0;
+
+}
 h1{
     text-align: center;
 }
 
 p {
     text-align: center;
+}
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-right: 2px solid #f5f5f5;
+    border-left: 4px solid#fdfdfd;
+    border-bottom: 4px solid #ffffffd6 ;
+    color: rgb(228, 231, 10);
 }
