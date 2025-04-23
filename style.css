@@ -1,96 +1,41 @@
 body {
-    background-color: #1b0179;
+    background-color: #ffffff;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 70px;
     box-sizing: border-box;
     height: 100vh;
 }
 
-button {
-    --glow-color: rgb(176, 233, 255);
-    --glow-spread-color: rgba(123, 136, 255, 0.781);
-    --ehanced-glow-color: rgb(152, 158, 245);
-    --btn-color: rgb(36, 62, 209);
-
-    border: .25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: 1em;
-    box-shadow: 0 0 1em .25 var(--glow-color),
-                0 0 4em 1em var(--glow-spread-color),
-                inset 0 0 0.75em .25em var(--glow-color);
-    text-shadow:  0 0 .5em var(--glow-color); 
-    position: relative;  
-    transition: all 0.3s;         
-}
-
-button::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-}
-
-button:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-                0 0 4em 2em var(--glow-spread-color),
-                inset 0 0 .75em .25em var(--glow-color);
-}
-
-button:active {
-    box-shadow: 0 00 0.6em .25em var(--glow-color),
-                0 0 2.5em 2em var(--glow-spread-color),
-                inset 0 0 .5em .25em var(--glow-color);
-
-}
-
-.contrainer {
-    max-width: 90px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 4px solid #fbfbfb;
-    border-top: 5px solid #ffffff;
-    
+    background-color: rgb(148, 148, 148);
+    padding: 60px;
 }
 
-main{
-    padding: 20px 0;
+
+
+nav {
+    position: absolute;
+    top: 170px;
+    right: 0;
 
 }
-h1{
-    text-align: center;
+ 
+nav li {
+    display: inline;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 0 0 15px;
+
+}
+ 
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-p {
-    text-align: center;
-}
-footer {
-    text-align: center;
-    padding-top: 20px;
-    border-right: 2px solid #f5f5f5;
-    border-left: 4px solid#fdfdfd;
-    border-bottom: 4px solid #ffffffd6 ;
-    color: rgb(228, 231, 10);
-}
